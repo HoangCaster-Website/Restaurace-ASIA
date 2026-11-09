@@ -25,3 +25,10 @@ Screenshots and measurements: research/update-qa/. Food image subjects reviewed 
 - ZIP refreshed with index.html at ZIP root and all current website assets. No build/backend required.
 
 This is a local project update, prepared for the user's GitHub Pages deployment.
+
+## 9 November 2026 — accommodation contacts and restaurant photographs
+- Accommodation booking now shows +420 720 368 150 first, followed by +420 770 646 639. Both numbers have telephone links in the booking area and beside the room price note.
+- Added three supplied photographs: covered outdoor seating, interior tables and the vaulted dining room. All three have Czech captions, alt text and working photo-viewer navigation.
+- Locally optimized WebP images total approximately 595 KiB. Original source mapping is in ASSET_SOURCES.json.
+- Browser checked at 320, 390, 430, 768, 1440 and 1920 px: no horizontal overflow, no JavaScript/resource errors, image loading, contact order/links and photo viewer passed. Mobile menu accommodation link checked at 390 px. Screenshots visually reviewed at 390 and 1440 px; evidence in research/november-qa/.
+- GitHub Pages ZIP refreshed; index.html remains at root.

@@ -91,5 +91,14 @@
     "prompts": "data/food-image-prompts.json",
     "disclosure": "Each AI image is captioned Ilustrační foto; menu introduction explains AI generation and possible serving differences. Dishes 4 and 17 retain restaurant photographs."
   },
-  "allergenScan": "assets/allergens.jpg — supplied by user on 2026-10-25"
+  "allergenScan": "assets/allergens.jpg — supplied by user on 2026-10-25",
+  "restaurantSpacesUpdate": {
+    "providedBy": "User attachments, 2026-11-09",
+    "images": {
+      "assets/outdoor-seating.webp": "Image 1: covered outdoor seating; codex-clipboard-656971f4-e6c1-4950-a696-9743001c7676.png",
+      "assets/interior-tables.webp": "Image 2: interior tables; codex-clipboard-6086ad47-776e-4d98-90ab-43b7649ad328.png",
+      "assets/interior-vaults.webp": "Image 3: vaulted dining room; codex-clipboard-8084bb67-6414-4cdf-9cdc-30911e0c8750.png"
+    },
+    "processing": "Local WebP optimization; original photograph content retained."
+  }
 }

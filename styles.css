@@ -114,6 +114,22 @@ img{display:block;max-width:100%;height:auto}
 .gallery-image img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
 .gallery-image:hover img{transform:scale(1.035)}
 .gallery-image:focus-visible{outline-offset:-5px}
+.restaurant-spaces{display:grid;grid-template-columns:.8fr 1.2fr;gap:28px 35px;margin-bottom:50px}
+.restaurant-spaces figure{display:flex;flex-direction:column;min-width:0}
+.restaurant-spaces .space-outdoor{grid-row:span 2}
+.space-photo{position:relative;display:block;width:100%;padding:0;overflow:hidden;aspect-ratio:1.96}
+.space-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .35s}
+.space-photo:hover img{transform:scale(1.025)}
+.space-outdoor .space-photo{flex:1;aspect-ratio:auto;min-height:0}
+.space-outdoor .space-photo img{object-position:center 60%}
+.restaurant-spaces figcaption{padding-top:12px;line-height:1.65}
+.restaurant-spaces figcaption strong{display:block;font-family:Bricolage,Arial,sans-serif;font-size:23px;font-weight:550;letter-spacing:-.5px}
+.restaurant-spaces figcaption span{display:block;font-size:11px;color:#c7d2c1;margin-top:4px}
+.stay-booking{display:flex;align-items:center;flex-wrap:wrap;gap:15px 22px;margin-top:28px}
+.stay-booking>.eyebrow{flex-basis:100%}
+.stay-copy .stay-booking .button{margin-top:0}
+.stay-booking>.text-link{font-size:13px;white-space:nowrap}
+@media(max-width:700px){.restaurant-spaces{grid-template-columns:1fr;gap:28px;margin-bottom:35px}.restaurant-spaces .space-outdoor{grid-row:auto}.space-outdoor .space-photo{flex:auto;aspect-ratio:3/4}.restaurant-spaces figcaption strong{font-size:22px}.restaurant-spaces figcaption span{font-size:11px}.stay-booking{gap:15px;margin-top:25px}.stay-booking>.text-link{font-size:12px}}
 .gallery-controls{display:flex;align-items:center;justify-content:space-between;font-size:10px;letter-spacing:.7px;margin-top:18px;color:#c7d2c1}
 .gallery-controls>div{display:flex;gap:10px}
 .gallery-controls button{display:grid;place-items:center;width:42px;height:42px;border:1px solid rgb(245 241 230 / .35);border-radius:50%;font-size:23px;color:var(--paper);transition:background .2s,color .2s}

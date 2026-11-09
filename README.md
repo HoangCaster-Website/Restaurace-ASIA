@@ -32,3 +32,7 @@ Bản thiết kế mới dùng Bricolage Grotesque + Manrope hỗ trợ tiếng 
 - Mục ubytování: 6 ảnh thật do chủ quán gửi, video MP4 xem trực tiếp, thông tin căn hộ 40 m² / 4 giường, bếp, phòng tắm và WC chung, bữa sáng, giá 750 / 650 / 550 Kč.
 - Mỗi món trong 45 mục menu có ảnh bên cạnh; 43 ảnh AI minh họa được ghi rõ, 2 ảnh thật của nhà hàng được giữ lại. Ảnh tối ưu WebP, lưu cục bộ trong `assets/dishes/`. Prompt và công cụ tạo ảnh nằm trong `data/food-image-prompts.json`.
 - File gốc `index.html` và mọi tài nguyên dùng đường dẫn tương đối, không cần build khi đưa lên GitHub Pages.
+
+## Cập nhật 09/11/2026
+
+Phần đặt phòng hiển thị hai số bấm gọi được: +420 720 368 150 đứng trước +420 770 646 639. Thêm ảnh khu ngồi ngoài trời và hai ảnh không gian trong nhà do chủ quán cung cấp.
