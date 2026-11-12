@@ -1,28 +1,4 @@
 (() => {
-  const toggle = document.querySelector('.nav-toggle');
-  const navigation = document.querySelector('#mobile-nav');
-  const setMenuOpen = (open) => {
-    if (!toggle || !navigation) return;
-    toggle.setAttribute('aria-expanded', String(open));
-    toggle.setAttribute('aria-label', open ? 'Zavřít navigaci' : 'Otevřít navigaci');
-    navigation.hidden = !open;
-    document.body.classList.toggle('modal-open', open);
-  };
-  toggle?.addEventListener('click', () => setMenuOpen(toggle.getAttribute('aria-expanded') !== 'true'));
-  navigation?.addEventListener('click', (event) => { if (event.target.closest('a')) setMenuOpen(false); });
-  navigation?.addEventListener('keydown', (event) => {
-    if (event.key !== 'Tab') return;
-    const links = [...navigation.querySelectorAll('a')];
-    if (!event.shiftKey && event.target === links.at(-1)) { event.preventDefault(); toggle.focus(); }
-    if (event.shiftKey && event.target === links[0]) { event.preventDefault(); toggle.focus(); }
-  });
-  toggle?.addEventListener('keydown', (event) => {
-    if (toggle.getAttribute('aria-expanded') !== 'true' || event.key !== 'Tab') return;
-    event.preventDefault();
-    (event.shiftKey ? navigation.querySelector('a:last-child') : navigation.querySelector('a')).focus();
-  });
-  document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && toggle?.getAttribute('aria-expanded') === 'true') { setMenuOpen(false); toggle.focus(); } });
-  window.matchMedia('(min-width: 701px)').addEventListener('change', (event) => { if (event.matches) setMenuOpen(false); });
   document.querySelectorAll('[data-year]').forEach((el) => { el.textContent = String(new Date().getFullYear()); });
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   const gallery = document.querySelector('.gallery-strip');
